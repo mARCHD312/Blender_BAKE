@@ -44,7 +44,7 @@ def create_photo(cwd, obj):
     baked_photo_name = f"{obj.name}_baked" 
     baked_photo_path = f"{cwd}\\outputs\\{baked_photo_name}.jpeg"
     image_texture_node = obj.active_material.node_tree.nodes.new('ShaderNodeTexImage')
-    image = bpy.data.images.new(name=baked_photo_name , width=4096, height=4096)
+    image = bpy.data.images.new(name=baked_photo_name , width=64, height=64)
     image.filepath_raw = baked_photo_path 
     image.file_format = 'JPEG'
     image.save()
@@ -362,7 +362,7 @@ def main():
     prepare_bake_save()
 
     delete_unused_nodes()
-    delete_unused_uv_maps()
+    # delete_unused_uv_maps()
     # raise
     # createing_atlas()    
     end_time = time.time()
