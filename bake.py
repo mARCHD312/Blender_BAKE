@@ -185,8 +185,8 @@ def prepare_bake_save():
     mtls_with_more_instances =  check_mtls_and_meshes()
 
     # for every objecty in coollection
-    for obj in bpy.data.collections['for_bake'].objects:
-    # # for obj in bpy.data.objects:  
+    # for obj in bpy.data.collections['for_bake'].objects:
+    for obj in bpy.data.objects:  
     
     # # if object have less than two material slots and is mesh tye
         if len(obj.material_slots)<2:
