@@ -52,7 +52,7 @@ def create_photo(cwd, obj):
     image_texture_node = obj.active_material.node_tree.nodes.new(
         'ShaderNodeTexImage')  # creating a new image texture node
 
-    image = bpy.data.images.new(name=baked_photo_name, width=64, height=64)
+    image = bpy.data.images.new(name=baked_photo_name, width=2048, height=2048)
     image.filepath_raw = baked_photo_path
     image.file_format = 'JPEG'
     image.save()

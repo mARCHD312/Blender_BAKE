@@ -2,11 +2,12 @@
 
 ## Description
     Project that takes prepared blend scene, and bake every model, generate output photos,
-    output blend file, output glb file
+    output blend file, output glb file.
+    Objects that you don't wont to unwrap, you name it start with letter "O".
 
 ## Requirements
     Python
-    Blender (2.93 tested)
+    Blender (3.3 tested)
     Set %BLENDER_LOCATION%\blender.exe to the PATH enviroment variable
 
 ## Runing 
